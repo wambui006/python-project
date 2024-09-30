@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 >Add Expense</h1>
+    </header>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="add_expense.html">Add Expense</a>
+            <a href="edit_expense.html">Edit Expense</a>
+            <a href="view_expense.html">View Expense</a>
+    </nav>
+    <main>
+        <section class="transactionform">
+            <h2>Transactions</h2>
+            <form id="AddExpenseForm">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" required />
+              </div>
+              <div>
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  name="amount"
+                  value="0"
+                  min="100"
+                  step="5"
+                  required
+               />
+              </div>
+              <div>
+                <label for="date">Date</label>
+                <input type="date" name="date" required />
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
